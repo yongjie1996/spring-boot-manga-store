@@ -1,3 +1,8 @@
+package com.mangastore.mymangastore.controller;
+
+import com.mangastore.mymangastore.repository.MangaRepository;
+import com.mangastore.mymangastore.model.Manga;
+
 import java.util.List;
 
 import org.springframework.stereotype.Controller;

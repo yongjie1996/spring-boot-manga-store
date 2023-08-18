@@ -1,3 +1,4 @@
+package com.mangastore.mymangastore.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

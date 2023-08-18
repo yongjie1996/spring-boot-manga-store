@@ -1,6 +1,10 @@
+package com.mangastore.mymangastore.repository;
+
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mangastore.mymangastore.model.Manga;
 
 public interface MangaRepository extends JpaRepository<Manga, Long> {
     // Find books by title
