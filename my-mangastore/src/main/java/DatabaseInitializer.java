@@ -1,9 +1,11 @@
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DatabaseInitializer implements CommandLineRunner {
 
+    @Autowired
     private final MangaRepository mangaRepository;
 
     public DatabaseInitializer(MangaRepository mangaRepository) {
@@ -13,6 +15,10 @@ public class DatabaseInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // Create and save Book instances
+        initializeBooks();
+    }
+
+    private void initializeBooks() {
         Manga manga1 = new Manga("Title 1", "Author 1", "Category 1");
         Manga manga2 = new Manga("Title 2", "Author 2", "Category 2");
 
