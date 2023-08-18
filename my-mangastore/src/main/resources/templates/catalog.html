@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Book Catalog</title>
+    <title>Manga Catalog</title>
 </head>
 <body>
-    <h1>Book Catalog</h1>
+    <h1>Manga Catalog</h1>
     <table>
         <tr>
             <th>ID</th>
             <th>Title</th>
             <th>Author</th>
-            <th>Category</th>
+            <th>Genre</th>
         </tr>
-        <tr th:each="book : ${books}">
-            <td th:text="${book.id}"></td>
-            <td th:text="${book.title}"></td>
-            <td th:text="${book.author}"></td>
-            <td th:text="${book.category}"></td>
+        <tr th:each="Manga : ${manga}">
+            <td th:text="${manga.id}"></td>
+            <td th:text="${manga.title}"></td>
+            <td th:text="${manga.author}"></td>
+            <td th:text="${manga.category}"></td>
         </tr>
     </table>
 </body>
