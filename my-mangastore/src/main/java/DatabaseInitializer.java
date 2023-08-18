@@ -2,6 +2,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.mangastore.mymangastore.model.Manga;
+import com.mangastore.mymangastore.repository.MangaRepository;
+
 @Component
 public class DatabaseInitializer implements CommandLineRunner {
 
