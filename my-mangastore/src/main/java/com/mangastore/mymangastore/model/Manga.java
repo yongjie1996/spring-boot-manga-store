@@ -1,16 +1,11 @@
 package com.mangastore.mymangastore.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
-@Data
-@Table(name = "manga")
 public class Manga {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
